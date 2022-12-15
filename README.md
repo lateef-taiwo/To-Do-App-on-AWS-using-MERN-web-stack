@@ -514,3 +514,18 @@ This creates a new directory in the Todo directory called client, where we will 
 
 * We need to use Axios. It is a promise-based HTTP Client for node.js and the browser. 
 
+    * Switch to the src folder
+        
+        `cd ..`
+
+    * Move to clients folder
+
+        `cd ..`
+    
+    * Install Axios
+
+        `npm install axios`
+
+        ![Axios](./images/Axios.png)
+        
+
