@@ -271,7 +271,13 @@ In Routes directory, open api.js with `vim api.js`, delete the code inside with 
         
         module.exports = router;
 
-        
+___
+### MONGODB DATABASE
+We will be storing the data for the app in a mongodb database.
+* You will need to sign up for a shared clusters free account, which is ideal for our use case. Visit https://www.mongodb.com/atlas-signup-from-mlab. 
+
+
+
 
 
 
