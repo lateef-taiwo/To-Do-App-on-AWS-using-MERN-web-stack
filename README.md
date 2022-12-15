@@ -276,15 +276,18 @@ ___
 We will be storing the data for the app in a mongodb database.
 * You will need to sign up for a shared clusters free account, which is ideal for our use case. Visit https://www.mongodb.com/atlas-signup-from-mlab. 
 
+* Follow the sign up process, select AWS as the cloud provider, and choose a region near you.
+Complete a get started checklist as shown on the image below
 
+    ![mongo_user](./images/mongodbuser.png)
 
+* Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
 
+    ![mongo-access](./images/mongodb_access.png)
 
+    ![mongo-account](./images/mongodb-setup-done.png)
 
-
-
-
-
-
+* Create a MongoDB database and collection inside mLab
+    ![mongo-colllection](./images/Mongodb_collection.png)
 
 
