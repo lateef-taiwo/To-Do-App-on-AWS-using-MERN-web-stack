@@ -375,4 +375,23 @@ Start your server using the command:
 
 ![Successful](./images/db_conn_succesful.png)
 
-* Testing Backend Code without Frontend using RESTful API
+___
+### Testing Backend Code with PostmanAPI 
+*Postman is an API platform for developers to design, build, test and iterate their APIs. 
+We will use Postman to test the backend code withou frontend. You can perform CRUD (Create, Read, Update and Delete) operations on Postmand which is a germane function of our Todo app.
+
+* Click https://www.postman.com/downloads/ to download and install postman on your machine.
+
+* Now open your Postman, create a POST request to the API http://<PublicIP-or-PublicDNS>:5000/api/todos. This request sends a new task to our To-Do list so the application could store it in the database.
+Note: make sure your set header key Content-Type as application/json
+
+
+
+
+
+
+
+
+
+
+
