@@ -705,4 +705,6 @@ Important note: In order to be able to access the application from the Internet 
 
     ![Todos](./images/Todos.png)
 
-    ## !!!Congratulations, You have developed a simple TO-do Application that uses React.js in the frontend that interacts with Express.js in the backend and a Mongodb database
+    ## !!!Congratulations, You have developed a simple TO-do Application that uses React.js in the frontend that interacts with Express.js in the backend and a Mongodb database.
+
+    You can make some better styling to the App by editing the values for the colours in the css files
