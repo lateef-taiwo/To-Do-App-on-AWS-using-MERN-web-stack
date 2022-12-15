@@ -365,3 +365,14 @@ Now, paste the entire code below in the file.
         console.log(`Server running on port ${port}`)
         });
 
+* Storing information inside the environment variables is considered more secure and best practice to separate configuration and secret data from the application.
+
+Start your server using the command:
+
+`node index.js`
+
+* You should see a message ‘Database connected successfully’, if so – we have our backend configured. Now we are going to test it.
+
+![Successful](./images/db_conn_succesful.png)
+
+* Testing Backend Code without Frontend using RESTful API
