@@ -35,3 +35,6 @@ ____
     ` sudo chmod 0400 <private-key-name>. pem` 
 * Connect to the instance by running
     ` ssh -i <private-key-name>. pem ubuntu@<Public-IP-address>`
+
+![ssh](./images/ssh.jpeg)
+
