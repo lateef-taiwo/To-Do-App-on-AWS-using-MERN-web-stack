@@ -152,8 +152,11 @@ Express is a framework for Node.js, so we can install it using the npm package m
 
 ![Browser](./images/Browser1.png)
 
+----------
+
 ### Routes
 There are three actions that our To-Do app should be able to do:
+
 * Create a new task
 * Display list of all tasks
 * Delete a completed task
