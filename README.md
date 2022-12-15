@@ -163,7 +163,10 @@ There are three actions that our To-Do app should be able to do:
 
 Each task will be associated with some particular endpoint and will use different standard HTTP request methods: POST, GET, DELETE.
 
-For each task, we need to create routes that will define various endpoints that the To-do app will depend on. Create a folder routes
+For each task, we need to create routes that will define various endpoints that the To-do app will depend on. Create a folder routes.
+
+    `mkdir routes`
+    !
 
 
 
