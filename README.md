@@ -423,5 +423,94 @@ This creates a new directory in the Todo directory called client, where we will 
             "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
             },
 
+        ![Todo-package.json](./images/Todo-package.json.png)
  
+* Configure Proxy in package.json
+    
+    * Change directory to client
+
+        `cd client`
+
+    * Open the package.json file
+
+        `vim package.json`
+
+        Add the key value pair in the package.json file `"proxy": "http://localhost:5000"`.
+
+    ![package.json](./images/package.json.png)
+
+### Create the React Components for the App
+
+* In the Todo directory run
+
+    `cd client`
+
+* Change directory to src directory
+
+    `cd src`
+
+* In the src directory create another directory called components
+
+    `mkdir components`
+
+* Change to the components directory using the command:
+    `cd components`
+
+* In the `components` directory create three files Input.js, ListTodo.js and Todo.js.
+
+    `touch Input.js ListTodo.js Todo.js`
+
+* Open Input.js file in the vim editor 
+
+    ![Multiple](./images/Multiple%20commands.png)
+
+    Paste the following
+
+        import React, { Component } from 'react';
+        import axios from 'axios';
+        
+        class Input extends Component {
+        
+        state = {
+        action: ""
+        }
+        
+        addTodo = () => {
+        const task = {action: this.state.action}
+        
+            if(task.action && task.action.length > 0){
+            axios.post('/api/todos', task)
+                .then(res => {
+                if(res.data){
+                    this.props.getTodos();
+                    this.setState({action: ""})
+                }
+                })
+                .catch(err => console.log(err))
+            }else {
+            console.log('input field required')
+            }
+        
+        }
+        
+        handleChange = (e) => {
+        this.setState({
+        action: e.target.value
+        })
+        }
+        
+        render() {
+        let { action } = this.state;
+        return (
+        <div>
+        <input type="text" onChange={this.handleChange} value={action} />
+        <button onClick={this.addTodo}>add todo</button>
+        </div>
+        )
+        }
+        }
+        
+        export default Input
+
+* We need to use Axios. It is a promise-based HTTP Client for node.js and the browser. 
 
