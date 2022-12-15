@@ -66,6 +66,46 @@ ___
 
 ![node](./images/node.png)
 
+* Verify the node installation with the command below
+
+`node --version && npm --version` or `node -v && npm -v`
+
+The command above checks the version of node and npm installed. npm is a package manager for node.
+
+![node&npm](./images/node%20%26%20npm.png)
+
+* Application Code Setup
+Create a new directory for your To-Do project and run the `ls` command to verify that Todo directory is created.
+
+    `mkdir TOdo`
+
+    `ls`
+![Todo](./images/todo.png)
+
+* Now change your current directory to the newly created one:
+
+    `cd Todo`
+![Todo](./images/todo%20dir.png)
+
+* Next, you will use the command `npm init` to initialise your project, so that a new file named package.json will be created. This file will  contain information about your application and the dependencies that it needs to run.
+
+    `npm init`
+
+    ![init](./images/npm%20init.png)
+
+* Install ExpressJS
+Express is a framework for Node.js, so we can install it using the npm package manager
+
+    `npm install express`
+
+    ![express](./images/express.png)
+
+* Now create an file index.js
+
+
+
+
+
 
 
 
