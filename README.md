@@ -1,5 +1,5 @@
 # TO-DO-APP-ON-AWS-USING-MERN-WEB-STACK
-This repository explains the steps involved in creating a to-do application on AWS using the MERN web stack. The MERN web stack consists of MongoDB, ExpressJS, ReactJS, and NodeJS as its working components. 
+This repository explains the steps involved in creating a To-Do application on AWS using the MERN web stack. The MERN web stack consists of MongoDB, ExpressJS, ReactJS, and NodeJS as its working components. 
 Full-stack online applications can be deployed more quickly and easily with the MERN Stack, a Javascript stack.
 The MERN Stack is made up of the following 4 technologies: MongoDB, Express, React, and Node.js.
 
@@ -10,8 +10,12 @@ The MERN Stack is made up of the following 4 technologies: MongoDB, Express, Rea
 It is intended to simplify and streamline the development process.
 Each of these four technologies plays a significant role in the creation of web apps and offers developers an end-to-end environment in which to operate. 
 
-![MERN image](./images/MERN%20img.jpeg)
+![MERN image](./images/MERN%20image.png)
 
+### This is the Architectural diagram of the Todo App and how users/clients with interact with it.
+The client communicates with the frontend via a web browser.
+
+![Diagram](./images/Architectural%20diagram.png)
 ---
 ____
 ## Step 1 - Create a Virtual Server on AWS
