@@ -163,10 +163,86 @@ There are three actions that our To-Do app should be able to do:
 
 Each task will be associated with some particular endpoint and will use different standard HTTP request methods: POST, GET, DELETE.
 
-For each task, we need to create routes that will define various endpoints that the To-do app will depend on. Create a folder routes.
+For each task, we need to create routes that will define various endpoints that the To-do app will depend on. 
+
+ * Create a folder routes .
+ * Change directory to routes folder.
+ * create a file api.js using the `touch api.js` commad
 
     `mkdir routes`
-    !
+
+    `cd routes`
+
+    `touch api.js`
+
+    ![routes](./images/routes.png)
+
+* Open the file in the vim editor and paste the code below in it.
+
+        const express = require ('express');
+        const router = express.Router();
+        
+        router.get('/todos', (req, res, next) => {
+        
+        });
+        
+        router.post('/todos', (req, res, next) => {
+        
+        });
+        
+        router.delete('/todos/:id', (req, res, next) => {
+        
+        })
+        
+        module.exports = router;
+
+    ![api](./images/api.png)
+
+*   Now we need to create models
+
+    Models are data structures that we use to define the shape of our data. We need to create a model for the app to make use of Mongodb which is a NoSQL database. We will also use models to define the database schema. Schema is a representation of how the database will be constructed.
+
+* Change directory to Todo folder using `cd ..` and install Mongoose.
+
+    `npm install mongoose`
+
+    ![mongoos](./images/mongoose.png)
+
+ * Create a new directory models.
+
+* Change directory into the newly created models directory.
+
+* create a new file todo.js.
+    
+    Use the command below to do the above in one shot
+
+    `mkdir models && cd models && touch todo.js`
+   
+* Open the todo.js file in the vim editor and paste the code below:
+
+        const mongoose = require('mongoose');
+        const Schema = mongoose.Schema;
+        
+        //create schema for todo
+        const TodoSchema = new Schema({
+        action: {
+        type: String,
+        required: [true, 'The todo text field is required']
+        }
+        })
+        
+        //create model for todo
+        const Todo = mongoose.model('todo', TodoSchema);
+        
+        module.exports = Todo;
+
+
+
+
+
+
+
+
 
 
 
