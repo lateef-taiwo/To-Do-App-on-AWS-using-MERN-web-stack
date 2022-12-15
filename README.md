@@ -100,8 +100,51 @@ Express is a framework for Node.js, so we can install it using the npm package m
 
     ![express](./images/express.png)
 
-* Now create an file index.js
+* Now create an file index.js and type `ls` to check the contents of the directory
 
+    `touch index.js`
+    `ls`
+
+    ![index.js](./images/index.js.png)
+
+* Next. Install the dotenv module
+
+    `npm install dotenv`
+
+    ![dotenv](./images/dotenv.png)
+
+* Open the index.js file in the vim editor and type the code below into it and save.
+
+    `vim index.js`
+
+        const express = require('express');
+        require('dotenv').config();
+        
+        const app = express();
+        
+        const port = process.env.PORT || 5000;
+        
+        app.use((req, res, next) => {
+        res.header("Access-Control-Allow-Origin", "\*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+        });
+        
+        app.use((req, res, next) => {
+        res.send('Welcome to Express');
+        });
+        
+        app.listen(port, () => {
+        console.log(`Server running on port ${port}`)
+        });
+
+* Now start the server to see if it works. Open your terminal in the same directory as your index.js file and type:
+
+    `node index.js`
+
+* Ensure you have port 5000 opened in EC2 security groups because the application will be running on that port. Also open port 80 for web access.
+
+![Sec-groups](./images/sec%20groups.png)
 
 
 
