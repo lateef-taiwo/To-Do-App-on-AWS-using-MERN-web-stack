@@ -14,7 +14,7 @@ Each of these four technologies plays a significant role in the creation of web 
 
 ---
 ____
-## Create a Virtual Server on AWS
+## Step 1 - Create a Virtual Server on AWS
 <!-- UL -->
 * Login to the AWS console
 * Search for EC2 (Elastic Compute Cloud) 
@@ -37,4 +37,8 @@ ____
     ` ssh -i <private-key-name>. pem ubuntu@<Public-IP-address>`
 
 ![ssh](./images/ssh.jpeg)
+
+<!-- Horizontal RUle -->
+---
+___
 
