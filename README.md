@@ -396,14 +396,32 @@ We will use Postman to test the backend code withou frontend. You can perform CR
 
 ![GET](./images/postman%20test.png)
 
+--------
+________
+## Step 3 - Creating the Frontend
+We will now create a user interface for a Web client (browser) to interact with the application via API. To start out with the frontend of the To-do app, we will use the create-react-app command to stage-set our app.
+In the same root directory as your backend code, which is the Todo directory, run:
 
+`npx create-react-app client`
 
+This creates a new directory in the Todo directory called client, where we will add all the react code.
 
+### Running a React App
+* Before testing the react app, we need to install some dependencies. 
+   * First, install `concurrently`. 
 
+     `npm install concurrently --save-dev`
+   * Install nodemon
 
+        `npm install nodemon --save-dev`
 
+   * In Todo folder open the package.json file. Change the highlighted part of the screenshot below and replace with the code below.
 
+            "scripts": {
+            "start": "node index.js",
+            "start-watch": "nodemon index.js",
+            "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
+            },
 
-
-
+ 
 
