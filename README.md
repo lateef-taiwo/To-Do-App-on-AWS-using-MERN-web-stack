@@ -27,3 +27,11 @@ ____
 
 ![server](./images/server.jpeg)
 
+* On your local computer, open the terminal and change directory to the Downloads folder, type 
+    
+    `$ cd ~/Downloads` 
+* Change permissions for the private key file (.pem), otherwise you can get an error “Bad permission”
+    
+    ` sudo chmod 0400 <private-key-name>. pem` 
+* Connect to the instance by running
+    ` ssh -i <private-key-name>. pem ubuntu@<Public-IP-address>`
