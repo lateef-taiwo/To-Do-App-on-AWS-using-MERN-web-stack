@@ -41,4 +41,19 @@ ____
 <!-- Horizontal RUle -->
 ---
 ___
+## Step 2 - Backend Configuration
+* Update Ubuntu
+
+    `sudo apt update`
+
+![update](./images/update.png)
+
+* Upgrade ubuntu
+
+    `sudo apt upgrade`
+
+![Upgrade](./images/upgrade.png)
+
+
+
 
