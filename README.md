@@ -439,6 +439,15 @@ This creates a new directory in the Todo directory called client, where we will 
 
     ![package.json](./images/package.json.png)
 
+    * In the Todo directory, type:
+
+    `npm run dev`
+
+    * Your app should open and start running on localhost:3000
+Important note: In order to be able to access the application from the Internet you have to open TCP port 3000 on EC2 by adding a new Security Group rule.
+
+    ![EC2 sec group](./images/port%203000.png)
+
 ### Create the React Components for the App
 
 * In the Todo directory run
@@ -623,4 +632,73 @@ This creates a new directory in the Todo directory called client, where we will 
             export default Todo;
 
     ![ListTodo](./images/ListTodo.png)
-    
+
+* Make some adjustments to the App.js file
+
+    `vim App.js`
+
+    Paste the code below into it
+
+        import React from 'react';
+        
+        import Todo from './components/Todo';
+        import './App.css';
+        
+        const App = () => {
+        return (
+        <div className="App">
+        <Todo />
+        </div>
+        );
+        }
+        
+        export default App;
+
+    * After pasting, exit the editor. 
+    In the src directory open the App.css
+
+        `vim App.ss`
+    * Then paste the following code into App.css:
+
+    * In the src directory open the index.css
+
+        `vim index.css`
+    * Copy and paste the code below:
+
+            body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            box-sizing: border-box;
+            background-color: #282c34;
+            color: #787a80;
+            }
+            
+            code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+            monospace;
+            }
+
+
+        ![App.js](./images/App.css.png)
+
+    * Go to the Todo directory
+
+    `cd ../..`
+    * Type
+
+    `npm run dev`
+
+    ![npm](./images/npm%20run%20dev.png)
+
+    * If there are no errors when saving all these files, the To-Do app should be ready and fully functional.
+
+    ![Todo](./images/Todo.png)
+
+    ![Todos](./images/Todos.png)
+
+    ## !!!Congratulations, You have developed a simple TO-do Application that uses React.js in the frontend that interacts with Express.js in the backend and a Mongodb database
