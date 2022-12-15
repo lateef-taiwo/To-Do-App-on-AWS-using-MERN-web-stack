@@ -383,7 +383,19 @@ We will use Postman to test the backend code withou frontend. You can perform CR
 * Click https://www.postman.com/downloads/ to download and install postman on your machine.
 
 * Now open your Postman, create a POST request to the API http://<PublicIP-or-PublicDNS>:5000/api/todos. This request sends a new task to our To-Do list so the application could store it in the database.
-Note: make sure your set header key Content-Type as application/json
+
+    Note: make sure your set header key Content-Type as application/json.
+
+* Open your Postman, create a POST request to the API `http://<PublicIP-or-PublicDNS>:5000/api/todos`. This request sends a new task to our To-Do list so the application could store it in the database.
+
+    ![POST](./images/postman.png)
+
+
+* Create a GET request to your API on `http://<PublicIP-or-PublicDNS>:5000/api/todos`.
+ This request retrieves all existing records from our To-do application (backend requests these records from the database and sends it us back as a response to GET request).
+
+![GET](./images/postman%20test.png)
+
 
 
 
