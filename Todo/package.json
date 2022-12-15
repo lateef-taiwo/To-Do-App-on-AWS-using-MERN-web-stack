@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lateef-taiwo/To-Do-App-on-AWS-using-MERN-web-stack/issues"
   },
-  "homepage": "https://github.com/lateef-taiwo/To-Do-App-on-AWS-using-MERN-web-stack#readme"
+  "homepage": "https://github.com/lateef-taiwo/To-Do-App-on-AWS-using-MERN-web-stack#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
