@@ -146,7 +146,11 @@ Express is a framework for Node.js, so we can install it using the npm package m
 
 ![Sec-groups](./images/sec%20groups.png)
 
+* Open up your browser and try to access your server’s Public IP or Public DNS name followed by port 5000:
 
+`http://<PublicIP-or-PublicDNS>:5000`
+
+![Browser](./images/Browser1.png)
 
 
 
