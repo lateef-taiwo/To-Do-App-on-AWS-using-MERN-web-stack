@@ -54,6 +54,18 @@ ___
 
 ![Upgrade](./images/upgrade.png)
 
+* Since we are using Ubuntu as our server, we will get the location of Node.js software from Ubuntu repositories.
+
+    `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+
+![curl](./images/curl.png)
+
+* Install Node.js with the command below
+
+    `sudo apt-get install -y nodejs`
+
+![node](./images/node.png)
+
 
 
 
