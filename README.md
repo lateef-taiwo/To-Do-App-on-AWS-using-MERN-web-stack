@@ -314,9 +314,10 @@ Create a file in your Todo directory and name it  `.env`.
     ![vim index.js](./images/vim%20index.png)
 
 
-Simply delete existing content in the file, and update it with the entire code below.
+* Simply delete existing content in the file, and update it with the entire code below.
 To do that using vim, follow below steps
 Open the file with vim index.js
+
     * Press esc
     * Type `:`
     * Type `%d`
@@ -363,5 +364,4 @@ Now, paste the entire code below in the file.
         app.listen(port, () => {
         console.log(`Server running on port ${port}`)
         });
-
 
