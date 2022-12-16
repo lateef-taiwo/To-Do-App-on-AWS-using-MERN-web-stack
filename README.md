@@ -703,12 +703,11 @@ Important note: In order to be able to access the application from the Internet 
 
     ![Todo](./images/Todo.png)
 
+* Add some tasks of you choice
     ![Todos](./images/Todos.png)
 
-    * Add some task
-
-    ## !!!Congratulations, You have developed a simple TO-do Application that uses React.js in the frontend that interacts with Express.js in the backend and a Mongodb database.
-
-    You can make some better styling to the App by editing the values for the colours in the css files
+    * You can add some better styling to the App by editing the values for the colours in the css files
 
     ![Todo](./images/Todo%20deployed.png)
+
+### !!!Congratulations, You have developed a simple To-do Application that uses React.js in the frontend that interacts with Express.js in the backend and a Mongodb database.
